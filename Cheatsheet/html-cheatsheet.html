@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<!--DOCTYPE lets web browser know what type doc using-->
+<head>
+  <!--The head is where you place information about the page
+contents eg the tab heading and page title, gives browser
+info about page -->
+  <title>Rosie Learning HTML- This will show in tab</title>
+</head>
+<body>
+  <header id="main header">
+    <!-- Can be multiple headers and footers so better to name the header and footer-->
+    <h1>My Cheatsheet</h1>
+  </header>
+
+  <small>Started in February 2019</small>
+
+  <h1>This is where the page title goes and will be large, bold writing</h1>
+  <h2>Headings can get smaller in size</h2>
+  <h3>going</h3>
+  <h4>down</h4>
+  <h5>to</h5>
+  <h6>h6</h6>
+
+  <p>The paragraph element is for any other text</P>
+
+  <p>You can align a paragraph to<p>
+    <p align="left">left</p>
+    <p align="center">centre</p>
+    <p align="right">, or right of screen</p>
+
+  <p>You can insert line breaks<br>with the break tag.</p>
+  <p>Yu can indent a piece of text from both sides using<blockquote>the bq tag</blockquote>.</p>
+
+<hr>
+
+<h3>Fonts and texts</h3>
+  <p>You can alter text boldness through <strong>strong tag</strong> or
+    italicise using <em>em tag</em>. You can create <tt>teletype or type-writer style</tt> text with the teletype tag. <cite>The citation tag will give citation impression eg. italicise.</cite></p>
+  <p>You can alter font using the <font size="6">font size tag</font>, or colour using <font color="blue">the font color tag</font>.</p>
+
+  <br></br>
+  <h3>Images</h3>
+  <p>You can include an image using the img tag, which will include the src="" property to show image source and the alt="" property to show image name if image doesn't appear</p>
+  <img src="https://pbs.twimg.com/profile_images/914809291567255553/zFv2_bk4_400x400.jpg" alt="Code First image" width="200px">
+  <p>You can alter the width and height, using the style attribute or the width and height attributes.</p>
+  <p>HTML allows animated gifs through image tags also.
+  <img src="https://media1.tenor.com/images/ab1f08104ac7571ea1a49c9ecea27e4a/tenor.gif?itemid=3923779" alt="I Like it GIF"></p>
+  <p>An image can be a link if you put the image tag inside the anchor tag.
+    <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">
+      <img src="https://c.tadst.com/gfx/750x500/link.png?1" alt="HTML Images tutorial">
+    </a>
+
+  <br>
+
+  <p>
+    These are two examples of attaching images. The first is an image which is saved in the same folder as the HTML, the second is an image saved in another folder so you need dash, folder name, file name.
+  </p>
+
+  <br>
+
+  <img src="Sample.jpg" alt="Learn code image">
+  <img src="images/filed_sample.jpg" alt="Learn code image">
+
+<!-- Can adjust width and height in HTML of image but advised to do in CSS -->
+
+  <br>
+
+<h3>Lists</h3>
+  <p>There are two types of lists you can create, ordered and unordered, shown below</p>
+
+    <ol>
+     <li>This</li>
+     <li>is</li>
+     <li>an</li>
+     <li>ordered</li>
+     <li>list</li>
+  </ol>
+
+  <ul>
+    <li>This</li>
+    <li>is</li>
+    <li>an</li>
+    <li>unordered</li>
+    <li>list</li>
+  </ul>
+
+  <p>There is also a <strong>description list</strong> element, which will have a list of groups of terms and descriptions, used for example for glossaries.</p>
+    <dl>
+      <dt>Hypertext Markup Language</dt>
+      <dt>HTML (You could put two description term elements)</dt>
+      <dd>The standard markup language for creating web pages.</dd>
+      <dd>Or web applications (You can have more than one description details element)</dd>
+      <dd>The description detail element gives details about/ the definition of the description term.</dd>
+
+      <dt>Cascading Stylesheets</dt>
+      <dt>(The Description Term element specifies a term in a dscription/ definition list.)</dt>
+        <dd>Alter how web pages are displayed.</dd>
+    </dl>
+<br>
+</br>
+<p>You can create a table using the table tag</p>
+<table>
+  <tr>
+    <th>This is a table</th>
+    <th>Use the table row tag to create a row</th>
+    <th>Use the table heading tag to create headings to rows and columns</th>
+  </tr>
+  <tr>
+    <td>You can then fill these with table data</td>
+    <td>And write the data within each tag</td>
+    <td>Table borders will be created using CSS</td>
+  </tr>
+  <tr>
+    <td>You can span columns by using the column span attribute</td>
+    <td colspan="2">These two columns have been spanned across</td>
+  </tr>
+</table>
+<p>The no wrap tag for table data prevents lines within a cell from being broken in order to fit</p>
+
+<h3>Links</h3>
+<p>An anchor tag with a mail to link in as the hyperlink, will activate default mail client on the computer to <a href="mailto:EMAIL">send an email</a>.</p>
+
+<h3>Forms</h3>
+<form>
+  <div>
+    <label>First Name</label>
+    <input type="text" name="first-name" placeholder="Enter first name">
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" name="email">
+  </div>
+    <label>Message</label>
+    <textarea name="message"></textarea>
+  </div>
+  <div>
+    <label>Gender</label>
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+      <option value="pfnt">Prefer Not To Say</option>
+    </select>
+  </div>
+  <div>
+    <label>Age:</label>
+    <input type="number" name="age" value="30">
+  </div>
+  <div>
+    <label>Birthday:</label>
+    <input type="date" name="birthday">
+  </div>
+  <br>
+  <input type="submit" name="submit" value="Submit">
+</form>
+
+<!-- Can also have buttons outside of form(but need javascript for it to do anything)... -->
+<button>Click Me</button>
+
+<br>
+
+<h3>Quotations</h3>
+
+<blockquote cite="https://skillcrush.com/2016/03/15/64-online-resources-to-learn-to-code-for-free/">There are a ton of places out there that promise they can teach you “how to code“
+</blockquote>
+
+<h3>Abbreviations</h3>
+  <p> The <abbr title="World Wide Web">WWW<abbr> has been abbreviated.</p>
+
+<h3>Semantic Tabs</h3>
+<p> Header, Footer, aside, main, article, nav, section, details</p>
+
+  <footer id="main footer">Copyright RP</footer>
+</body>
+
+
+</html>
